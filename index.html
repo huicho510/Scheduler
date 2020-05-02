@@ -28,157 +28,73 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+    <!-- the time blocks with save buttons -->
     <div class="container">
       <div class="row">
-        <div class="col">
-          8:00<input type="text" /><input
-            id="button"
-            class="btn"
-            type="submit"
-            value="Save"
-          />
-        </div>
+        <div class="col-2 hour time-block">8:00 am</div>
+
+        <textarea id="8" class="col-8 input"></textarea>
+
+        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
       </div>
       <div class="row">
-        <div class="col-12">
-          9:00<input type="text" /><input
-            id="button"
-            class="btn"
-            type="submit"
-            value="Save"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          10:00<input type="text" /><input
-            id="button"
-            class="btn"
-            type="submit"
-            value="Save"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          11:00<input type="text" /><input
-            id="button"
-            class="btn"
-            type="submit"
-            value="Save"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          12:00<input type="text" /><input
-            id="button"
-            class="btn"
-            type="submit"
-            value="Save"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          1:00<input type="text" /><input
-            id="button"
-            class="btn"
-            type="submit"
-            value="Save"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          2:00<input type="text" /><input
-            id="button"
-            class="btn"
-            type="submit"
-            value="Save"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          3:00<input type="text" /><input
-            id="button"
-            class="btn"
-            type="submit"
-            value="Save"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          4:00<input type="text" /><input
-            id="button"
-            class="btn"
-            type="submit"
-            value="Save"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          5:00<input type="text" /><input
-            id="button"
-            class="btn"
-            type="submit"
-            value="Save"
-          />
-        </div>
+        <div class="col-2 hour time-block">9:00 am</div>
+
+        <textarea id="9" class="col-8 input"></textarea>
+        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
       </div>
 
-      <!-- <table id = schedule>
-          <tr>
-            <th>08:00<button id="submit">Submit</button></th>
-          </tr>
-          <tr>
-            <th>09:00<button id="submit">Submit</button></th>
-          </tr>
-          <tr>
-            <th>10:00<button id="submit">Submit</button></th>
-          </tr>
-          <tr>
-            <th>11:00</th>
-          </tr>
-          <tr>
-            <th>12:00</th>
-          </tr>
-          <tr>
-            <th>13:00</th>
-          </tr>
-          <tr>
-            <th>14:00</th>
-          </tr>
-          <tr>
-            <th>15:00</th>
-          </tr>
-          <tr>
-            <th>16:00</th>
-          </tr>
-          <tr>
-            <th>17:00</th>
-          </tr>
-      </table> -->
-      <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="col-2 hour time-block">10:00 am</div>
+
+        <textarea id="10" class="col-8 input"></textarea>
+
+        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+
+      <div class="row">
+        <div class="col-2 hour time-block">11:00 am</div>
+
+        <textarea id="11" class="col-8 input"></textarea>
+
+        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 hour time-block">12:00 am</div>
+
+        <textarea id="12" class="col-8 input"></textarea>
+
+        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 hour time-block">1:00 pm</div>
+
+        <textarea id="13" class="col-8 input"></textarea>
+
+        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 hour time-block">2:00 pm</div>
+
+        <textarea id="14" class="col-8 input"></textarea>
+
+        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 hour time-block">3:00 pm</div>
+
+        <textarea id="15" class="col-8 input"></textarea>
+
+        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 hour time-block">4:00 pm</div>
+
+        <textarea id="16" class="col-8 input"></textarea>
+
+        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+      </div>
     </div>
-    <!-- <script>
-     $(document).ready(function(){
-      $('#newItem').keyup(function(e){
-                var code = e.which;
-                if(code == 13){
-                    e.preventDefault();
-                    $('table').append('<th>'+e.target.value+'</th>'); 
-                }
-            });
-          });  -->
-
-    <!-- //      $('tr').attr('<button id="submit">Submit</button>');
-    // }); 
-    </script> -->
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./Assets/schedule.js"></script>
