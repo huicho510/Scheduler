@@ -5,7 +5,7 @@ var hourTime;
 
 // uses the moment.js functionality to show this data on the top of the calender
 
-$("#currentDay").text(momentApp.format("dddd, MMMM Do"));
+$("#currentDay").text(momentApp.format("dddd, MMMM YYYY"));
 
 //calls these 2 functions onto the document itself
 $(document).ready(function () {
@@ -45,7 +45,7 @@ $(".saveBtn").click(function () {
   console.log(toDo);
   hourTime = $(this).siblings(".hour").text();
   console.log(hourTime);
-  
+
   localStorage.setItem(hourTime, JSON.stringify(toDo));
 
   // colorChange();
