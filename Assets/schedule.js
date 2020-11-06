@@ -14,12 +14,12 @@ $(document).ready(function () {
 });
 //color change functionality for past, present, and future time slots
 function colorChange() {
-  var realTime = moment().hours();
+  let realTime = moment().hours();
 
-  console.log("Current Time" + realTime);
+  console.log("Current Time " + realTime);
 
   $(".input").each(function () {
-    var timeTest = parseInt($(this).attr("id"));
+    let timeTest = parseInt($(this).attr("id"));
     console.log(timeTest);
 
     if (realTime > timeTest) {
@@ -45,48 +45,49 @@ $(".saveBtn").click(function () {
   console.log(toDo);
   hourTime = $(this).siblings(".hour").text();
   console.log(hourTime);
+  
   localStorage.setItem(hourTime, JSON.stringify(toDo));
 
-  colorChange();
-  renderText();
+  // colorChange();
+  // renderText();
 });
 
 //saves the actual words typed in the specific time slot
 
 function renderText() {
-  var saveWords8 = JSON.parse(localStorage.getItem("8:00 am"));
+  let saveWords8 = JSON.parse(localStorage.getItem("8:00 am"));
   $("#8").val("");
   $("#8").val(saveWords8);
 
-  var saveWords9 = JSON.parse(localStorage.getItem("9:00 am"));
+  let saveWords9 = JSON.parse(localStorage.getItem("9:00 am"));
   $("#9").val("");
   $("#9").val(saveWords9);
 
-  var saveWords10 = JSON.parse(localStorage.getItem("10:00 am"));
+  let saveWords10 = JSON.parse(localStorage.getItem("10:00 am"));
   $("#10").val("");
   $("#10").val(saveWords10);
 
-  var saveWords11 = JSON.parse(localStorage.getItem("11:00 am"));
+  let saveWords11 = JSON.parse(localStorage.getItem("11:00 am"));
   $("#11").val("");
   $("#11").val(saveWords11);
 
-  var saveWords12 = JSON.parse(localStorage.getItem("12:00 pm"));
+  let saveWords12 = JSON.parse(localStorage.getItem("12:00 pm"));
   $("#12").val("");
   $("#12").val(saveWords12);
 
-  var saveWords1 = JSON.parse(localStorage.getItem("1:00 pm"));
+  let saveWords1 = JSON.parse(localStorage.getItem("1:00 pm"));
   $("#13").val("");
   $("#13").val(saveWords1);
 
-  var saveWords2 = JSON.parse(localStorage.getItem("2:00 pm"));
+  let saveWords2 = JSON.parse(localStorage.getItem("2:00 pm"));
   $("#14").val("");
   $("#14").val(saveWords2);
 
-  var saveWords3 = JSON.parse(localStorage.getItem("3:00 pm"));
+  let saveWords3 = JSON.parse(localStorage.getItem("3:00 pm"));
   $("#15").val("");
   $("#15").val(saveWords3);
 
-  var saveWords4 = JSON.parse(localStorage.getItem("4:00 pm"));
+  let saveWords4 = JSON.parse(localStorage.getItem("4:00 pm"));
   $("#16").val("");
   $("#16").val(saveWords4);
 }
